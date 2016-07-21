@@ -19,6 +19,6 @@ The Search Loop
 <?php endwhile; else: ?>
 	<?php tha_entry_after(); ?>
     <div class="alert alert-warning">
-        <i class="glyphicon glyphicon-exclamation-sign"></i> <?php _e('Sorry, your search yielded no results.', 'bst-plus'); ?>
+        <i class="glyphicon glyphicon-exclamation-sign"></i> <?php _e('Sorry, your search yielded no results.', 'es-mad'); ?>
     </div>
 <?php endif; ?>

@@ -7,8 +7,8 @@
       <div id="content" role="main">
         <?php tha_content_before(); ?>
         <div class="alert alert-warning">
-          <h1><i class="glyphicon glyphicon-warning-sign"></i> <?php _e('Error', 'bst-plus'); ?> 404</h1>
-          <p><?php _e('The page you were looking for does not exist.', 'bst-plus'); ?></p>
+          <h1><i class="glyphicon glyphicon-warning-sign"></i> <?php _e('Error', 'es-mad'); ?> 404</h1>
+          <p><?php _e('The page you were looking for does not exist.', 'es-mad'); ?></p>
         </div>
       </div><!-- /#content -->
     </div>

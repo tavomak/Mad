@@ -1,14 +1,14 @@
 <?php
 
-function bst_plus_widgets_init() {
+function es_mad_widgets_init() {
 
   	/*
     Sidebar (one widget area)
      */
     register_sidebar( array(
-        'name' => __( 'Sidebar', 'bst-plus' ),
+        'name' => __( 'Sidebar', 'es-mad' ),
         'id' => 'sidebar-widget-area',
-        'description' => __( 'The sidebar widget area', 'bst-plus' ),
+        'description' => __( 'The sidebar widget area', 'es-mad' ),
         'before_widget' => '<section class="%1$s %2$s">',
         'after_widget' => '</section>',
         'before_title' => '<h4>',
@@ -19,9 +19,9 @@ function bst_plus_widgets_init() {
     Footer (three widget areas)
      */
     register_sidebar( array(
-        'name' => __( 'Footer', 'bst-plus' ),
+        'name' => __( 'Footer', 'es-mad' ),
         'id' => 'footer-widget-area',
-        'description' => __( 'The footer widget area', 'bst-plus' ),
+        'description' => __( 'The footer widget area', 'es-mad' ),
         'before_widget' => '<div class="%1$s %2$s col-sm-4">',
         'after_widget' => '</div>',
         'before_title' => '<h4>',
@@ -29,4 +29,4 @@ function bst_plus_widgets_init() {
     ) );
 
 }
-add_action( 'widgets_init', 'bst_plus_widgets_init' );
+add_action( 'widgets_init', 'es_mad_widgets_init' );

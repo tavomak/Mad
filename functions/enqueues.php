@@ -26,7 +26,7 @@ if( !is_admin()){
 	}
 }
 
-function bst_plus_enqueues() {
+function es_mad_enqueues() {
 
 /*
 OPTIONAL: Enqueue WordPress's onboard jQuery
@@ -47,8 +47,8 @@ Delete (or comment-out) the next two lines of code below if you don't want the B
   	wp_register_style('bootstrap-theme-css', get_template_directory_uri() . '/css/bootstrap-theme.min.css', false, null);
 	wp_enqueue_style('bootstrap-theme-css');
 
-  	wp_register_style('bst-plus-css', get_template_directory_uri() . '/css/bst-plus.css', false, null);
-	wp_enqueue_style('bst-plus-css');
+  	wp_register_style('es-mad-css', get_template_directory_uri() . '/css/es-mad.css', false, null);
+	wp_enqueue_style('es-mad-css');
 
   	wp_register_script('modernizr', get_template_directory_uri() . '/js/modernizr-2.8.3.min.js', false, null, false);
 	wp_enqueue_script('modernizr');
@@ -56,11 +56,11 @@ Delete (or comment-out) the next two lines of code below if you don't want the B
   	wp_register_script('bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', false, null, true);
 	wp_enqueue_script('bootstrap-js');
 
-	wp_register_script('bst-plus-js', get_template_directory_uri() . '/js/bst-plus.js', false, null, true);
-	wp_enqueue_script('bst-plus-js');
+	wp_register_script('es-mad-js', get_template_directory_uri() . '/js/es-mad.js', false, null, true);
+	wp_enqueue_script('es-mad-js');
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');
 	}
 }
-add_action('wp_enqueue_scripts', 'bst_plus_enqueues', 100);
+add_action('wp_enqueue_scripts', 'es_mad_enqueues', 100);

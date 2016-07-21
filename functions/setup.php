@@ -1,23 +1,23 @@
 <?php
 
-function bst_plus_setup() {
+function es_mad_setup() {
     add_editor_style('css/editor-style.css');
     add_theme_support('post-thumbnails');
     update_option('thumbnail_size_w', 170);
     update_option('medium_size_w', 470);
     update_option('large_size_w', 970);
 }
-add_action('init', 'bst_plus_setup');
+add_action('init', 'es_mad_setup');
 
 if (! isset($content_width))
 	$content_width = 600;
 
-function bst_plus_excerpt_readmore() {
-    return '&nbsp; <a href="'. get_permalink() . '">' . '&hellip; ' . __('Read more', 'bst-plus') . ' <i class="glyphicon glyphicon-arrow-right"></i>' . '</a></p>';
+function es_mad_excerpt_readmore() {
+    return '&nbsp; <a href="'. get_permalink() . '">' . '&hellip; ' . __('Read more', 'es-mad') . ' <i class="glyphicon glyphicon-arrow-right"></i>' . '</a></p>';
 }
-add_filter('excerpt_more', 'bst_plus_excerpt_readmore');
+add_filter('excerpt_more', 'es_mad_excerpt_readmore');
 
-function bst_plus_browser_body_class( $classes ) {
+function es_mad_browser_body_class( $classes ) {
 	global $is_lynx, $is_gecko, $is_IE, $is_opera, $is_NS4, $is_safari, $is_chrome, $is_iphone;
 	
 	if($is_lynx) $classes[] = 'lynx';
@@ -51,7 +51,7 @@ function bst_plus_browser_body_class( $classes ) {
  
 	return $classes;
 }
-add_filter( 'body_class', 'bst_plus_browser_body_class' );
+add_filter( 'body_class', 'es_mad_browser_body_class' );
 
 // Add post formats support. See http://codex.wordpress.org/Post_Formats
 
@@ -59,8 +59,8 @@ add_theme_support('post-formats', array('aside', 'gallery', 'link', 'image', 'qu
 
 // Bootstrap pagination
 
-if ( ! function_exists( 'bst_plus_pagination' ) ) {
-	function bst_plus_pagination() {
+if ( ! function_exists( 'es_mad_pagination' ) ) {
+	function es_mad_pagination() {
 		global $wp_query;
 		$big = 999999999; // This needs to be an unlikely integer
 		// For more options and info view the docs for paginate_links()

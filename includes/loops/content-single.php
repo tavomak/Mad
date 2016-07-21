@@ -13,13 +13,13 @@ The Single Posts Loop
             <h2><?php the_title()?></h2>
             <h4>
                 <em>
-                    <span class="text-muted author"><?php _e('By', 'bst-plus'); echo " "; the_author() ?>,</span>
+                    <span class="text-muted author"><?php _e('By', 'es-mad'); echo " "; the_author() ?>,</span>
                     <time  class="text-muted" datetime="<?php the_time('d-m-Y')?>"><?php the_time('jS F Y') ?></time>
                 </em>
             </h4>
             <p class="text-muted" style="margin-bottom: 30px;">
-                <i class="glyphicon glyphicon-folder-open"></i>&nbsp; <?php _e('Filed under', 'bst-plus'); ?>: <?php the_category(', ') ?><br/>
-                <i class="glyphicon glyphicon-comment"></i>&nbsp; <?php _e('Comments', 'bst-plus'); ?>: <?php comments_popup_link(__('None', 'bst-plus'), '1', '%'); ?>
+                <i class="glyphicon glyphicon-folder-open"></i>&nbsp; <?php _e('Filed under', 'es-mad'); ?>: <?php the_category(', ') ?><br/>
+                <i class="glyphicon glyphicon-comment"></i>&nbsp; <?php _e('Comments', 'es-mad'); ?>: <?php comments_popup_link(__('None', 'es-mad'), '1', '%'); ?>
             </p>
             <?php tha_entry_top(); ?>
         </header>

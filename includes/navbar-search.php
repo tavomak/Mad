@@ -11,5 +11,5 @@ Then you can insert the Search Widget into the sidebar.
 	<div class="form-group">
 		<input class="form-control" type="text" value="<?php echo get_search_query(); ?>" placeholder="Search..." name="s" id="s">
 	</div>
-	<button type="submit" id="searchsubmit" value="<?php esc_attr_x('Search', 'bst-plus') ?>" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
+	<button type="submit" id="searchsubmit" value="<?php esc_attr_x('Search', 'es-mad') ?>" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
 </form>

@@ -1,20 +1,20 @@
 <?php
 // WooCommerce functions
-if ( ! function_exists( 'bst_plus_woocommerce_setup' ) ) :
-  function bst_plus_woocommerce_setup() {
+if ( ! function_exists( 'es_mad_woocommerce_setup' ) ) :
+  function es_mad_woocommerce_setup() {
     add_theme_support( 'woocommerce' );
   }
 endif;
-add_action( 'after_setup_theme', 'bst_plus_woocommerce_setup' );
+add_action( 'after_setup_theme', 'es_mad_woocommerce_setup' );
 /*
 Set Default Thumbnail Sizes for WooCommerce Product Pages, on Theme Activation
 */
 global $pagenow;
-if ( is_admin() && isset( $_GET['activated'] ) && $pagenow == 'themes.php' ) add_action( 'init', 'bst_plus_woocommerce_image_dimensions', 1 );
+if ( is_admin() && isset( $_GET['activated'] ) && $pagenow == 'themes.php' ) add_action( 'init', 'es_mad_woocommerce_image_dimensions', 1 );
 /*
 Define image sizes
 */
-function bst_plus_woocommerce_image_dimensions() {
+function es_mad_woocommerce_image_dimensions() {
   $catalog = array(
 		'width' 	=> '350',	// px
 		'height'	=> '453',	// px
@@ -43,30 +43,30 @@ function bst_plus_woocommerce_image_dimensions() {
 remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
 remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
 // Add BST Plus wrappers
-add_action('woocommerce_before_main_content', 'bst_plus_wrapper_start', 10);
-add_action('woocommerce_after_main_content', 'bst_plus_wrapper_end', 10);
+add_action('woocommerce_before_main_content', 'es_mad_wrapper_start', 10);
+add_action('woocommerce_after_main_content', 'es_mad_wrapper_end', 10);
 function reinnervate_wrapper_start() {
   echo '<main id="main" class="site-main" role="main">';
 }
-function bst_plus_wrapper_end() {
+function es_mad_wrapper_end() {
   echo '</main>';
 }
 
 /*
 Place a cart icon with number of items and total cost in the menu bar.
 */
-function bst_plus_woomenucart($menu, $args) {
+function es_mad_woomenucart($menu, $args) {
 	// Check if WooCommerce is active and add a new item to a menu assigned to "Navbar Upper Right" (Primary Navigation Menu) location
 	if ( !in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) || 'navbar-upper-right' !== $args->theme_location )
 		return $menu;
 	ob_start();
 		global $woocommerce;
-		$viewing_cart = __('View your shopping cart', 'bst-plus');
-		$start_shopping = __('Start shopping', 'bst-plus');
+		$viewing_cart = __('View your shopping cart', 'es-mad');
+		$start_shopping = __('Start shopping', 'es-mad');
 		$cart_url = $woocommerce->cart->get_cart_url();
 		$shop_page_url = get_permalink( woocommerce_get_page_id( 'shop' ) );
 		$cart_contents_count = $woocommerce->cart->cart_contents_count;
-		$cart_contents = sprintf(_n('%d item', '%d items', $cart_contents_count, 'bst-plus'), $cart_contents_count);
+		$cart_contents = sprintf(_n('%d item', '%d items', $cart_contents_count, 'es-mad'), $cart_contents_count);
 		$cart_total = $woocommerce->cart->get_cart_total();
     if ($cart_contents_count == 0) {
       $menu_item = '<li class="pull-right"><a class="woo-menu-cart" href="'. $shop_page_url .'" title="'. $start_shopping .'">';
@@ -80,4 +80,4 @@ function bst_plus_woomenucart($menu, $args) {
 	$social = ob_get_clean();
 	return $menu . $social;
 }
-add_filter('wp_nav_menu_items','bst_plus_woomenucart', 10, 2);
+add_filter('wp_nav_menu_items','es_mad_woomenucart', 10, 2);

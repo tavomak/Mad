@@ -7,7 +7,7 @@ If you require only post excerpts to be shown in index and category pages, then 
 
 If you require different templates for different post types, then simply duplicate this template, save the copy as, e.g. "content-aside.php", and modify it the way you like it. (The function-call "get_post_format()" within index.php, category.php and single.php will redirect WordPress to use your custom content template.)
 
-Alternatively, notice that index.php, category.php and single.php have a post_class() function-call that inserts different classes for different post types into the <section> tag (e.g. <section id="" class="format-aside">). Therefore you can simply use e.g. .format-aside {your styles} in css/bst-plus.css style the different formats in different ways.
+Alternatively, notice that index.php, category.php and single.php have a post_class() function-call that inserts different classes for different post types into the <section> tag (e.g. <section id="" class="format-aside">). Therefore you can simply use e.g. .format-aside {your styles} in css/es-mad.css style the different formats in different ways.
 */
 ?>
 <?php tha_content_before(); ?>
@@ -19,7 +19,7 @@ Alternatively, notice that index.php, category.php and single.php have a post_cl
             <h2><a href="<?php the_permalink(); ?>"><?php the_title()?></a></h2>
             <h4>
               <em>
-                <span class="text-muted author"><?php _e('By', 'bst-plus'); echo " "; the_author() ?>,</span>
+                <span class="text-muted author"><?php _e('By', 'es-mad'); echo " "; the_author() ?>,</span>
                 <time  class="text-muted" datetime="<?php the_time('d-m-Y')?>"><?php the_time('jS F Y') ?></time>
               </em>
             </h4>
@@ -27,12 +27,12 @@ Alternatively, notice that index.php, category.php and single.php have a post_cl
         </header>
         <section>
             <?php the_post_thumbnail(); ?>
-            <?php the_content( __( '&hellip; ' . __('Continue reading', 'bst-plus' ) . ' <i class="glyphicon glyphicon-arrow-right"></i>', 'bst-plus' ) ); ?>
+            <?php the_content( __( '&hellip; ' . __('Continue reading', 'es-mad' ) . ' <i class="glyphicon glyphicon-arrow-right"></i>', 'es-mad' ) ); ?>
         </section>
         <footer>
             <p class="text-muted" style="margin-bottom: 20px;">
-                <i class="glyphicon glyphicon-folder-open"></i>&nbsp; <?php _e('Category', 'bst-plus'); ?>: <?php the_category(', ') ?><br/>
-                <i class="glyphicon glyphicon-comment"></i>&nbsp; <?php _e('Comments', 'bst-plus'); ?>: <?php comments_popup_link(__('None', 'bst-plus'), '1', '%'); ?>
+                <i class="glyphicon glyphicon-folder-open"></i>&nbsp; <?php _e('Category', 'es-mad'); ?>: <?php the_category(', ') ?><br/>
+                <i class="glyphicon glyphicon-comment"></i>&nbsp; <?php _e('Comments', 'es-mad'); ?>: <?php comments_popup_link(__('None', 'es-mad'), '1', '%'); ?>
             </p>
         </footer>
     </article>
@@ -40,10 +40,10 @@ Alternatively, notice that index.php, category.php and single.php have a post_cl
 <?php endwhile; ?>
 <?php tha_entry_after(); ?>
 
-<?php if ( function_exists('bst_plus_pagination') ) { bst_plus_pagination(); } else if ( is_paged() ) { ?>
+<?php if ( function_exists('es_mad_pagination') ) { es_mad_pagination(); } else if ( is_paged() ) { ?>
   <ul class="pagination">
-    <li class="older"><?php next_posts_link('<i class="glyphicon glyphicon-arrow-left"></i> ' . __('Previous', 'bst-plus')) ?></li>
-    <li class="newer"><?php previous_posts_link(__('Next', 'bst-plus') . ' <i class="glyphicon glyphicon-arrow-right"></i>') ?></li>
+    <li class="older"><?php next_posts_link('<i class="glyphicon glyphicon-arrow-left"></i> ' . __('Previous', 'es-mad')) ?></li>
+    <li class="newer"><?php previous_posts_link(__('Next', 'es-mad') . ' <i class="glyphicon glyphicon-arrow-right"></i>') ?></li>
   </ul>
 <?php } ?>
 <?php else: wp_redirect(get_bloginfo('siteurl').'/404', 404); exit; endif; ?>

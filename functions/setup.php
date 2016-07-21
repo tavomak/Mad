@@ -6,6 +6,7 @@ function es_mad_setup() {
     update_option('thumbnail_size_w', 170);
     update_option('medium_size_w', 470);
     update_option('large_size_w', 970);
+    add_image_size( 'noticia', 450 );
 }
 add_action('init', 'es_mad_setup');
 
@@ -71,8 +72,8 @@ if ( ! function_exists( 'es_mad_pagination' ) ) {
 			'total' => $wp_query->max_num_pages,
 			'mid_size' => 5,
 			'prev_next' => True,
-			'prev_text' => __('<i class="glyphicon glyphicon-chevron-left"></i> Newer'),
-			'next_text' => __('Older <i class="glyphicon glyphicon-chevron-right"></i>'),
+			'prev_text' => __('<i class="glyphicon glyphicon-chevron-left"></i> Nuevas'),
+			'next_text' => __('Anteriores <i class="glyphicon glyphicon-chevron-right"></i>'),
 			'type' => 'list'
 		) );
 		$paginate_links = str_replace( "<ul class='page-numbers'>", "<ul class='pagination'>", $paginate_links );

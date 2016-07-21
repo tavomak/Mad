@@ -11,7 +11,7 @@ require_once locate_template('/functions/widgets.php');
 require_once locate_template('/functions/search.php');
 require_once locate_template('/functions/feedback.php');
 require_once locate_template('/functions/woocommerce-setup.php');
-//require_once locate_template('/functions/custom-post-type-resource.php');
+require_once locate_template('/functions/custom-post-type-resource.php');
 require locate_template('/functions/theme-hooks.php');
 
 //include locate_template('/includes/options/bst-options.php');

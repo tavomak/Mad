@@ -14,5 +14,11 @@
     
 	</div><!-- /.row -->
 </div><!-- /.container -->
+<section class="container noticias">
+    <h1>Noticias</h1>
+</section>
+<section class="container talleres">
+    <h1>Talleres</h1>
+</section>
 <?php get_template_part('includes/subfooter'); ?>
 <?php get_template_part('includes/footer'); ?>

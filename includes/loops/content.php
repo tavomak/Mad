@@ -27,7 +27,8 @@ Alternatively, notice that index.php, category.php and single.php have a post_cl
         </header>
         <section>
             <?php the_post_thumbnail(); ?>
-            <?php the_content( __( '&hellip; ' . __('Continue reading', 'es-mad' ) . ' <i class="glyphicon glyphicon-arrow-right"></i>', 'es-mad' ) ); ?>
+            <?php the_excerpt();?>
+            <?php //the_content( __( '&hellip; ' . __('Continue reading', 'es-mad' ) . ' <i class="glyphicon glyphicon-arrow-right"></i>', 'es-mad' ) ); ?>
         </section>
         <footer>
             <p class="text-muted" style="margin-bottom: 20px;">
@@ -46,4 +47,6 @@ Alternatively, notice that index.php, category.php and single.php have a post_cl
     <li class="newer"><?php previous_posts_link(__('Next', 'es-mad') . ' <i class="glyphicon glyphicon-arrow-right"></i>') ?></li>
   </ul>
 <?php } ?>
-<?php else: wp_redirect(get_bloginfo('siteurl').'/404', 404); exit; endif; ?>
+<?php else: wp_redirect(get_bloginfo('siteurl').'/404', 404); exit; ?>
+	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+<?php endif; ?>

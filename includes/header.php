@@ -34,7 +34,6 @@
       <?php /* <a class="navbar-brand" href="<?php echo home_url('/'); ?>"><?php bloginfo('name'); ?></a> */ ?>
     </div>
     <div class="collapse navbar-collapse" id="navbar-upper">
-        <?php get_template_part('includes/navbar-search'); ?>
         <?php
             wp_nav_menu( array(
                 'theme_location'    => 'navbar-upper-right',
@@ -47,3 +46,6 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container -->
 </nav>
+<div class="container">
+    <?php// get_template_part('includes/navbar-search'); ?>
+</div>

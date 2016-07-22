@@ -30,10 +30,10 @@ function my_custom_login_logo()
 add_action('login_head',  'my_custom_login_logo');
 
 
-/*function add_last_nav_item($items) {
-  return $items .= '<li><a data-toggle="modal" href="#custom-modal-0" >This is my modal</a></li>';
+function add_last_nav_item($items) {
+  return $items .= '<li> <a type="button" data-toggle="modal" data-target="#escribenos">Contacto</a></li>';
 }
-add_filter('wp_nav_menu_items','add_last_nav_item');*/
+add_filter('wp_nav_menu_items','add_last_nav_item');
 
 
 ?>

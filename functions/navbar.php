@@ -168,9 +168,9 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 }
 
 // Upper navbar (above site title)
-register_nav_menu('navbar-upper-left', __('Upper navbar (left)', 'es-mad'));
-register_nav_menu('navbar-upper-right', __('Upper navbar (right)', 'es-mad'));
+//register_nav_menu('navbar-upper-left', __('Upper navbar (left)', 'es-mad'));
+register_nav_menu('navbar-upper-right', __('Menú principal', 'es-mad'));
 
 // Lower navbar (below site title)
-register_nav_menu('navbar-lower-left', __('Lower navbar (left)', 'es-mad'));
-register_nav_menu('navbar-lower-right', __('Lower navbar (right)', 'es-mad'));
+//register_nav_menu('navbar-lower-left', __('Lower navbar (left)', 'es-mad'));
+//register_nav_menu('navbar-lower-right', __('Lower navbar (right)', 'es-mad'));

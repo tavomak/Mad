@@ -139,4 +139,34 @@ svg {
 .navbar-default .navbar-form {
   padding: 15px 0 0 0; }
 
+/* line 13, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/style.scss */
+img.alignright {
+  float: right;
+  margin: 0 0 1em 1em; }
+
+/* line 14, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/style.scss */
+img.alignleft {
+  float: left;
+  margin: 0 1em 1em 0; }
+
+/* line 15, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/style.scss */
+img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* line 16, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/style.scss */
+.alignright {
+  float: right; }
+
+/* line 17, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/style.scss */
+.alignleft {
+  float: left; }
+
+/* line 18, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/style.scss */
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
 /*# sourceMappingURL=style.css.map */

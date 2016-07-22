@@ -1,5 +1,5 @@
 <?php get_template_part('includes/header'); ?>
-
+<div id="preloader">Loading...</div>
 <div class="container">
   <div class="row">
 

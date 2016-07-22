@@ -1,0 +1,12 @@
+@import 'http://bourbon.io/'; // http://bourbon.io/
+@import 'partials/media'; // Media Queries MQ(s,m,l,xl)
+@import 'partials/mixins'; // centrado vertical/horizontal y fallback fuentes
+@import 'partials/variables'; // colores, tipos de letra y personalizados
+@import 'modules/loader';
+.navbar-nav li a{
+    line-height: 50px;
+    margin-right: 5px;
+}
+.navbar-default .navbar-form{
+    padding: 15px 0 0 0;
+}

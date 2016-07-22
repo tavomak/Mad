@@ -1,5 +1,4 @@
 <?php
-
 /*
 Google CDN jQuery with a local fallback
 =======================================
@@ -37,27 +36,37 @@ Un-comment the next two lines of code if you want to use WordPress's onboard jQu
 */
     
 	wp_register_style('bootstrap-css', get_template_directory_uri() . '/css/bootstrap.min.css', false, '3.3.4', null);
-	wp_enqueue_style('bootstrap-css');
+	wp_register_style('theme', get_template_directory_uri() . '/css/style-dist.css', false, null);
+  	wp_register_style('es-mad-css', get_template_directory_uri() . '/css/es-mad.css', false, null);
+
+    wp_enqueue_style('bootstrap-css');
+    wp_enqueue_style('theme');
+	wp_enqueue_style('es-mad-css');
 
 /*
 OPTIONAL: Bootstrap Theme enqueued
 ==================================
 Delete (or comment-out) the next two lines of code below if you don't want the Bootstrap Theme.
 */
-  	wp_register_style('bootstrap-theme-css', get_template_directory_uri() . '/css/bootstrap-theme.min.css', false, null);
-	wp_enqueue_style('bootstrap-theme-css');
-
-  	wp_register_style('es-mad-css', get_template_directory_uri() . '/css/es-mad.css', false, null);
-	wp_enqueue_style('es-mad-css');
-
   	wp_register_script('modernizr', get_template_directory_uri() . '/js/modernizr-2.8.3.min.js', false, null, false);
-	wp_enqueue_script('modernizr');
-
-  	wp_register_script('bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', false, null, true);
-	wp_enqueue_script('bootstrap-js');
-
+    wp_register_script('boot', get_template_directory_uri() . '/js/bootstrap.js', false, null, false);
+    wp_register_script('dwn', get_template_directory_uri() . '/js/preload.js', false, null, false);
+    wp_register_script('main', get_template_directory_uri() . '/js/main-dist.js', false, null, false);
 	wp_register_script('es-mad-js', get_template_directory_uri() . '/js/es-mad.js', false, null, true);
+
+	wp_enqueue_script('modernizr');
+	wp_enqueue_script('boot');
+	wp_enqueue_script('dwn');
+    wp_enqueue_script('main');
 	wp_enqueue_script('es-mad-js');
+
+
+    //if (is_woocommerce()) {
+        //wp_register_style('woomm', get_template_directory_uri() . '/css/woocommerce-dist.css', false, null);
+        //wp_enqueue_style('woomm');
+    //}
+
+
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');

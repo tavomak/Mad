@@ -132,6 +132,10 @@ svg {
   height: 100%;
 }
 
+nav {
+  position: absolute;
+}
+
 .navbar-nav li a {
   line-height: 50px;
   margin-right: 5px;
@@ -141,34 +145,255 @@ svg {
   padding: 15px 0 0 0;
 }
 
-img.alignright {
+.navbar-default {
+  padding: 5px 0 0 0;
+  background: white;
+  border: none;
+}
+
+.primary-slide .carousel .carousel-inner {
+  max-height: 87vh;
+  overflow: hidden;
+}
+
+.primary-slide .carousel .carousel-inner img {
+  width: 100%;
+  height: auto;
+}
+
+.primary-slide .carousel .item .caption {
+  position: absolute;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  line-height: 1;
+}
+
+@media handheld, only screen and (max-width: 480px) {
+  body {
+    text-align: center;
+  }
+}
+
+p, a {
+  line-height: 120%;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box !important;
+}
+
+*::after, *::before {
+  content: '';
+}
+
+a {
+  text-decoration: none;
+}
+
+.dn {
+  display: none;
+}
+
+.fl {
+  float: left !important;
+}
+
+.fr {
   float: right;
-  margin: 0 0 1em 1em;
 }
 
-img.alignleft {
-  float: left;
-  margin: 0 1em 1em 0;
+.fn {
+  float: none;
 }
 
-img.aligncenter {
+.cb {
+  clear: both;
+}
+
+.wrap-footer {
+  margin: 20px 0 0 0;
+  background-color: #f5f5f5;
+  min-height: 300px;
+  width: 100%;
+}
+
+.wrap-footer h1 {
+  margin: 20px 0 5px 0;
+}
+
+.wrap-footer .visit {
+  margin: 0 0 20px 0;
+}
+
+.wrap-footer .social-footer {
+  margin: 25px;
+}
+
+.wrap-footer .copy {
+  font-size: 12px;
+}
+
+.wrap-footer .est {
+  font-size: 14px;
+}
+
+.wpcf7 {
+  margin: 0 auto;
+  text-align: center;
+  margin: 0 0 25px 0;
+}
+
+.wpcf7 input[type=submit] {
+  width: 200px;
+  background: #EDEDEB;
+  border: none;
+  height: 60px;
+}
+
+.wpcf7 input[type=submit]:hover {
+  background: #52504A;
+  color: white;
+}
+
+.wpcf7 textarea, .wpcf7 input {
+  width: 500px;
+}
+
+@media handheld, only screen and (max-width: 480px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+.main-noticias, .main-talleres {
+  width: 100%;
+  margin: 25px 0 25px 0;
+  display: table;
+}
+
+.main-noticias {
+  background: #f5f5f5;
+}
+
+.noticias p {
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+footer h1 {
+  font-size: 30px;
+  color: grey;
+}
+
+footer h2 {
+  color: grey;
+  margin-bottom: 20px;
+}
+
+footer a {
+  color: grey;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
+
+footer a h3 {
+  font-size: 18px;
+  color: grey;
+  font-weight: bold;
+  margin: 13px 0;
+}
+
+footer #bordertop-footer {
+  width: 95%;
+}
+
+footer #borderright-footer {
+  border-right: 1px solid grey;
+  margin: 15px 0;
+  height: 190px;
+}
+
+footer .social {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.alignright {
-  float: right;
-}
-
-.alignleft {
   float: left;
 }
 
-.aligncenter {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+footer .social .facebook {
+  margin-left: 13px;
+}
+
+footer .social .instagram {
+  margin-left: 12px;
+}
+
+footer .social .twitter {
+  margin-left: 40px;
+}
+
+footer .pago {
+  border-left: 1px solid grey;
+  margin: 15px 0;
+  height: 190px;
+}
+
+footer .pago h3 {
+  text-align: right;
+  font-size: 16px;
+  font-weight: bold;
+  color: grey;
+}
+
+footer .pago ul {
+  list-style: none;
+  text-align: right;
+}
+
+.primary-slide .carousel .carousel-inner {
+  max-height: 87vh;
+  overflow: hidden;
+}
+
+.primary-slide .carousel .carousel-inner img {
+  width: 100%;
+  height: auto;
+}
+
+.primary-slide .carousel .item .caption {
+  position: absolute;
+  max-width: 50%;
+  margin-left: 20px;
+}
+
+.loop-img img {
+  max-width: 80px;
+  height: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

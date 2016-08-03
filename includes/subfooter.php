@@ -3,7 +3,6 @@
     <div class="row">
         <?php dynamic_sidebar('footer-widget-area'); ?>
     </div>
-    <hr/>
     <footer class="container-fluid site-footer">
         <?php tha_footer_top(); ?>
             <div id="bordertop-footer" class="container-fluid">
@@ -44,7 +43,7 @@
                 <div class="col-sm-3">
                     <div class="social">
                         <h2>SOCIAL</h2>
-                        <a href="#">
+                        <a href="https://www.facebook.com/espaciomad/?fref=ts" target="_blank">
                             <p>FACEBOOK <span class="icon-facebook facebook"></span></p>
                         </a>
                         <a href="#">
@@ -56,10 +55,10 @@
                     </div>
                 </div>
                 <div class="col-sm-3">
-                    <div class="pago">
-                        <p>Aceptamos pago con:</p>
+                    <div class="pago ">
+                        <h3>Aceptamos pago con:</h3>
                         <ul>
-                            <li class="text-center"> <img src="<?php bloginfo('template_directory'); ?>/img/pagos.jpg" alt="MercadoPago"></li>
+                            <li> <img src="<?php bloginfo('template_directory'); ?>/img/pagos.jpg" alt="MercadoPago"></li>
                             <!--li img(src="", alt="Visa-MasterCard")
         -->
                             <!--li img(src="", alt="PayPal")
@@ -74,17 +73,15 @@
             <hr/>
             <div class="row text-center">
                 <div class="col-lg-12 site-sub-footer">
-                    <ul>
+                    <ul class="list-inline">
                         <li class="list-inline">
-                            <p class="copy">&copy;
-                                <?php echo date('Y'); ?>
-                                    <a class="copy" href="<?php echo home_url('/'); ?>">
-                                        <?php bloginfo('name'); ?> Todos los derechos reservados</a>
-                            </p>
+                            <p class="copy">&copy; <?php echo date('Y'); ?>, Todos los derechos reservados.</p>
                         </li>
                         <li class="list-inline">
-                            <a href="">
-                                <p class="est list-inline">Designed and coded by</p> <img class="list-inline" src="<?php bloginfo('template_directory'); ?>/img/estela-logo.png" alt="Estela estudio de diseño"> </a>
+                            <p class="est">Designed and coded by</p>
+                        </li>
+                        <li class="list-inline">
+                            <img class="" src="<?php bloginfo('template_directory'); ?>/img/estela-logo.png" alt="Estela estudio de diseño">
                         </li>
                     </ul>
                 </div>
@@ -125,7 +122,7 @@
                         <div id="social-media">
                             <div class="col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
                                 <ul>
-                                    <li><a href="#"><span class="icon-facebook2"></span></a></li>
+                                    <li><a href="https://www.facebook.com/espaciomad/"><span class="icon-facebook2"></span></a></li>
                                     <li><a href="#"><span class="icon-instagram"></span></a></li>
                                     <li> <a href="#"><span class="icon-twitter"></span></a></li>
                                     <li><a href="#"><span class="icon-youtube"> </span></a></li>

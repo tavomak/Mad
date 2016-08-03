@@ -29,11 +29,25 @@ function my_custom_login_logo()
 }
 add_action('login_head',  'my_custom_login_logo');
 
+// CUSTOM ADMIN DASHBOARD HEADER LOGO
+
+function custom_admin_logo()
+{
+    echo '<style type="text/css">#header-logo { background-image: url(' . get_bloginfo('template_directory') . '/img/dash-logo.jpg) !important; }</style>';
+}
+add_action('admin_head', 'custom_admin_logo');
+
+// Admin footer modification
+
+function remove_footer_admin ()
+{
+    echo '<span id="footer-thankyou">Developed by <a href="http://www.estelaestudio.com" target="_blank">Estela estudio de diseño</a></span>';
+}
+add_filter('admin_footer_text', 'remove_footer_admin');
 
 function add_last_nav_item($items) {
-  return $items .= '<li> <a type="button" data-toggle="modal" data-target="#escribenos">Contacto</a></li>';
+  return $items .= '<li><a type="button" data-toggle="modal" data-target="#escribenos">Contacto</a></li>';
 }
 add_filter('wp_nav_menu_items','add_last_nav_item');
-
 
 ?>

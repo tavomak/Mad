@@ -38,10 +38,12 @@ Un-comment the next two lines of code if you want to use WordPress's onboard jQu
 	wp_register_style('bootstrap-css', get_template_directory_uri() . '/css/bootstrap.min.css', false, '3.3.4', null);
 	wp_register_style('theme', get_template_directory_uri() . '/css/style-dist.css', false, null);
   	wp_register_style('es-mad-css', get_template_directory_uri() . '/css/es-mad.css', false, null);
+  	wp_register_style('ico-mad-css', get_template_directory_uri() . '/css/icomoon.css', false, null);
 
     wp_enqueue_style('bootstrap-css');
     wp_enqueue_style('theme');
 	wp_enqueue_style('es-mad-css');
+	wp_enqueue_style('ico-mad-css');
 
 /*
 OPTIONAL: Bootstrap Theme enqueued

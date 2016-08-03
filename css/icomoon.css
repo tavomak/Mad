@@ -1,0 +1,225 @@
+@font-face {
+    font-family: 'icomoon';
+    src:    url('../fonts/icomoon.eot?crrvdj');
+    src:    url('../fonts/icomoon.eot?crrvdj#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?crrvdj') format('truetype'),
+        url('../fonts/icomoon.woff?crrvdj') format('woff'),
+        url('../fonts/icomoon.svg?crrvdj#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-share2:before {
+    content: "\e900";
+}
+.icon-mail:before {
+    content: "\e901";
+}
+.icon-mail2:before {
+    content: "\e902";
+}
+.icon-mail3:before {
+    content: "\e903";
+}
+.icon-mail4:before {
+    content: "\e904";
+}
+.icon-google-plus:before {
+    content: "\e905";
+}
+.icon-google-plus2:before {
+    content: "\e906";
+}
+.icon-google-plus3:before {
+    content: "\e907";
+}
+.icon-hangouts:before {
+    content: "\e908";
+}
+.icon-facebook:before {
+    content: "\e909";
+}
+.icon-facebook2:before {
+    content: "\e90a";
+}
+.icon-instagram:before {
+    content: "\e90b";
+}
+.icon-whatsapp:before {
+    content: "\e90c";
+}
+.icon-spotify:before {
+    content: "\e90d";
+}
+.icon-telegram:before {
+    content: "\e90e";
+}
+.icon-twitter:before {
+    content: "\e90f";
+}
+.icon-vine:before {
+    content: "\e910";
+}
+.icon-vk:before {
+    content: "\e911";
+}
+.icon-renren:before {
+    content: "\e912";
+}
+.icon-sina-weibo:before {
+    content: "\e913";
+}
+.icon-rss:before {
+    content: "\e914";
+}
+.icon-rss2:before {
+    content: "\e915";
+}
+.icon-youtube:before {
+    content: "\e916";
+}
+.icon-youtube2:before {
+    content: "\e917";
+}
+.icon-twitch:before {
+    content: "\e918";
+}
+.icon-vimeo:before {
+    content: "\e919";
+}
+.icon-vimeo2:before {
+    content: "\e91a";
+}
+.icon-flickr:before {
+    content: "\e91b";
+}
+.icon-flickr2:before {
+    content: "\e91c";
+}
+.icon-flickr3:before {
+    content: "\e91d";
+}
+.icon-flickr4:before {
+    content: "\e91e";
+}
+.icon-dribbble:before {
+    content: "\e91f";
+}
+.icon-behance:before {
+    content: "\e920";
+}
+.icon-behance2:before {
+    content: "\e921";
+}
+.icon-deviantart:before {
+    content: "\e922";
+}
+.icon-500px:before {
+    content: "\e923";
+}
+.icon-steam:before {
+    content: "\e924";
+}
+.icon-steam2:before {
+    content: "\e925";
+}
+.icon-github:before {
+    content: "\e926";
+}
+.icon-wordpress:before {
+    content: "\e927";
+}
+.icon-ello:before {
+    content: "\e928";
+}
+.icon-blogger:before {
+    content: "\e929";
+}
+.icon-blogger2:before {
+    content: "\e92a";
+}
+.icon-tumblr:before {
+    content: "\e92b";
+}
+.icon-tumblr2:before {
+    content: "\e92c";
+}
+.icon-yahoo:before {
+    content: "\e92d";
+}
+.icon-soundcloud:before {
+    content: "\e92e";
+}
+.icon-soundcloud2:before {
+    content: "\e92f";
+}
+.icon-skype:before {
+    content: "\e930";
+}
+.icon-reddit:before {
+    content: "\e931";
+}
+.icon-hackernews:before {
+    content: "\e932";
+}
+.icon-linkedin:before {
+    content: "\e933";
+}
+.icon-linkedin2:before {
+    content: "\e934";
+}
+.icon-lastfm:before {
+    content: "\e935";
+}
+.icon-lastfm2:before {
+    content: "\e936";
+}
+.icon-delicious:before {
+    content: "\e937";
+}
+.icon-stumbleupon:before {
+    content: "\e938";
+}
+.icon-stumbleupon2:before {
+    content: "\e939";
+}
+.icon-stackoverflow:before {
+    content: "\e93a";
+}
+.icon-pinterest:before {
+    content: "\e93b";
+}
+.icon-pinterest2:before {
+    content: "\e93c";
+}
+.icon-xing:before {
+    content: "\e93d";
+}
+.icon-xing2:before {
+    content: "\e93e";
+}
+.icon-flattr:before {
+    content: "\e93f";
+}
+.icon-foursquare:before {
+    content: "\e940";
+}
+.icon-yelp:before {
+    content: "\e941";
+}
+

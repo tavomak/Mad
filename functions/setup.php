@@ -14,7 +14,7 @@ if (! isset($content_width))
 	$content_width = 600;
 
 function es_mad_excerpt_readmore() {
-    return '&nbsp; <a href="'. get_permalink() . '">' . '&hellip; ' . __('Read more', 'es-mad') . ' <i class="glyphicon glyphicon-arrow-right"></i>' . '</a></p>';
+    return '&nbsp; <a href="'. get_permalink() . '">' . '&hellip; ' . __('Ver mas', 'es-mad') . ' <i class="glyphicon glyphicon-arrow-right"></i>' . '</a></p>';
 }
 add_filter('excerpt_more', 'es_mad_excerpt_readmore');
 
@@ -56,7 +56,7 @@ add_filter( 'body_class', 'es_mad_browser_body_class' );
 
 // Add post formats support. See http://codex.wordpress.org/Post_Formats
 
-add_theme_support('post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat'));
+//add_theme_support('post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat'));
 
 // Bootstrap pagination
 

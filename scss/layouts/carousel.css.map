@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "carousel.css",
+  "sources": [
+    "carousel.scss"
+  ],
+  "sourcesContent": [],
+  "mappings": ";AAEQ,cAAc,CAAC,SAAS,CAAC,eAAe,CAAzB;EACX,UAAU,EAAE,IAAK;EACjB,QAAQ,EAAE,MAAO,GAFL;;EAGZ,cAAc,CAAC,SAAS,CAAC,eAAe,CAAC,GAAG,CAAzC;IACC,KAAK,EAAE,IAAK;IACZ,MAAM,EAAE,IAAK,GAFb;;;AAMJ,cAAc,CAAC,SAAS,CAAC,KAAK,CAAC,QAAQ,CAA/B;EACJ,QAAQ,EAAE,QAAS;EACnB,SAAS,EAAE,GAAI;EACf,WAAW,EAAE,IAAK,GAHb",
+  "names": []
+}

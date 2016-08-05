@@ -6,75 +6,68 @@
     <footer class="container-fluid site-footer">
         <?php tha_footer_top(); ?>
             <div id="bordertop-footer" class="container-fluid">
-                <div class="col-sm-3">
+                <div class="col-sm-6 col-md-3">
                     <div id="borderright-footer">
                         <h2>NOSOTROS</h2>
                         <a href="#">
-                            <p>GALERÍA MENDOZA</p>
+                            <p>Galería Mendoza</p>
                         </a>
                         <a href="#">
-                            <p>COMPRATVENDEARTE.COM</p>
+                            <p>Comprayvendearte.com</p>
                         </a>
                         <a href="#">
-                            <p>MENDOZA REAL ESTATES</p>
+                            <p>Mendoza Real Estates</p>
                         </a>
                         <a href="#">
-                            <p>FUND. ACTIVISTAS DE LA DELICIDAD</p>
+                            <p>Fund. Activistas de la felicidad</p>
                         </a>
                     </div>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-6 col-md-3">
                     <div id="borderright-footer">
                         <h2>ALIADOS</h2>
                         <a href="#">
                             <p>GAAG</p>
                         </a>
                         <a href="#">
-                            <p>EFRACSIS REVIZINE</p>
+                            <p>Efracsis RevizineE</p>
                         </a>
                         <a href="#">
-                            <p>LA ONG</p>
+                            <p>La ONG</p>
                         </a>
                         <a href="#">
-                            <p>NODOCCS</p>
+                            <p>Nodocss</p>
                         </a>
                     </div>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-6 col-md-3  visible-sm visible-md visible-lg">
                     <div class="social">
                         <h2>SOCIAL</h2>
                         <a href="https://www.facebook.com/espaciomad/?fref=ts" target="_blank">
-                            <p>FACEBOOK <span class="icon-facebook facebook"></span></p>
+                            <span class="icon-facebook facebook fl"></span><p>Facebook</p>
                         </a>
                         <a href="#">
-                            <p>INSTAGRAM<span class="icon-instagram instagram"></span></p>
+                            <span class="icon-instagram instagram fl"></span><p>Instagram</p>
                         </a>
                         <a href="#">
-                            <p>TWITTER<span class="icon-twitter twitter"></span></p>
+                            <span class="icon-twitter twitter fl"></span><p>Twitter</p>
                         </a>
                     </div>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-6 col-md-3 visible-sm visible-md visible-lg">
                     <div class="pago ">
-                        <h3>Aceptamos pago con:</h3>
+                        <h4 class="text-right">Aceptamos pago con:</h4>
                         <ul>
                             <li> <img src="<?php bloginfo('template_directory'); ?>/img/pagos.jpg" alt="MercadoPago"></li>
-                            <!--li img(src="", alt="Visa-MasterCard")
-        -->
-                            <!--li img(src="", alt="PayPal")
-        -->
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <?//php dynamic_sidebar('footer-widget-area'); ?>
             </div>
             <hr/>
             <div class="row text-center">
                 <div class="col-lg-12 site-sub-footer">
                     <ul class="list-inline">
-                        <li class="list-inline">
+                        <li >
                             <p class="copy">&copy; <?php echo date('Y'); ?>, Todos los derechos reservados.</p>
                         </li>
                         <li class="list-inline">
@@ -98,29 +91,13 @@
                         <h3 class="modal-tittle text-center">ESCRIBENOS</h3> </div>
                     <div class="modal-body">
                         <form>
-                            <div class="form-group">
-                                <label for="form-nombre" class="sr-only">Nombre</label>
-                                <input id="form-nombre" type="text" placeholder="Nombre" class="form-control"> </div>
-                            <div class="form-group">
-                                <label for="form-email" class="sr-only">Email</label>
-                                <input id="form-email" type="email" placeholder="Email" class="form-control"> </div>
+                            <?php echo do_shortcode( '[contact-form-7 id="1865" title="Contact form 1"]' ); ?>
                         </form>
-                        <form>
-                            <div class="form-group">
-                                <label class="sr-only">Texto</label>
-                                <textarea placeholder="Texto" rows="8" class="form-control"></textarea>
-                            </div>
-                        </form>
-                        <div class="row">
-                            <div class="col-sm-6 col-sm-offset-3">
-                                <button type="button" data-dismiss="modal" class="btn btn-contacto">ENVIAR</button>
-                            </div>
-                        </div>
                     </div>
                     <div class="modal-footer">
                         <h3 class="modal-tittle text-center">SOCIAL</h3>
                         <div id="social-media">
-                            <div class="col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+                            <div class="text-center">
                                 <ul>
                                     <li><a href="https://www.facebook.com/espaciomad/"><span class="icon-facebook2"></span></a></li>
                                     <li><a href="#"><span class="icon-instagram"></span></a></li>

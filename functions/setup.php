@@ -14,7 +14,7 @@ if (! isset($content_width))
 	$content_width = 600;
 
 function es_mad_excerpt_readmore() {
-    return '&nbsp; <a href="'. get_permalink() . '">' . '&hellip; ' . __('Ver mas', 'es-mad') . ' <i class="glyphicon glyphicon-arrow-right"></i>' . '</a></p>';
+    return '&nbsp; <a href="'. get_permalink() . '">' . '&hellip; ' . __('Ver mas', 'es-mad') . '</a></p>';
 }
 add_filter('excerpt_more', 'es_mad_excerpt_readmore');
 

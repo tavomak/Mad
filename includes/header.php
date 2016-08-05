@@ -30,7 +30,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/mad-logo.png" alt="Espacio Mad"></a>
+              <a class="navbar-brand" href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/mad-logo.png" alt="Espacio Mad"></a>
               <?php /* <a class="navbar-brand" href="<?php echo home_url('/'); ?>"><?php bloginfo('name'); ?></a> */ ?>
             </div>
             <div class="collapse navbar-collapse" id="navbar-upper">

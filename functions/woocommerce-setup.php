@@ -55,7 +55,7 @@ function es_mad_wrapper_end() {
 /*
 Place a cart icon with number of items and total cost in the menu bar.
 */
-function es_mad_woomenucart($menu, $args) {
+/*function es_mad_woomenucart($menu, $args) {
 	// Check if WooCommerce is active and add a new item to a menu assigned to "Navbar Upper Right" (Primary Navigation Menu) location
 	if ( !in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) || 'navbar-upper-right' !== $args->theme_location )
 		return $menu;
@@ -80,4 +80,4 @@ function es_mad_woomenucart($menu, $args) {
 	$social = ob_get_clean();
 	return $menu . $social;
 }
-add_filter('wp_nav_menu_items','es_mad_woomenucart', 10, 2);
+add_filter('wp_nav_menu_items','es_mad_woomenucart', 10, 2);*/

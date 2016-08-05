@@ -4,9 +4,11 @@
 html, body{
     width: 100%;
     height: 100%;
+    color: $color-1;
 }
 body{
     line-height: 1;
+    letter-spacing: .5px;
     @include MQ(S){
         text-align: center;
     }
@@ -36,7 +38,7 @@ table {
     box-sizing: border-box !important;
 }
 *::after, *::before {
-	content: '';
+	//content: '';
 }
 //decoracion---------------------------------------------
 a{
@@ -57,4 +59,11 @@ a{
 }
 .cb{
     clear: both;
+}
+
+a:hover{
+    color: black;
+}
+.hovernav{
+    cursor: pointer;
 }

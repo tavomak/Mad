@@ -1,0 +1,35 @@
+.single {
+    .single-img {
+        padding: 0;
+        max-height: 80vh;
+        overflow: hidden;
+        margin-bottom: 25px;
+        .img-bg {
+            img{
+                width: 100%;
+                height: auto;
+                vertical-align: middle;
+                margin: -20% 0 0 0;
+            }
+        }
+        .wrap-title{
+            margin: 0 auto;
+            max-width: 60%;
+            background: $color-3;
+            position: relative;
+            .img-title {
+                text-align: center;
+            }
+            hr{
+                border: 1px solid $color-1;
+                margin: 0;
+            }
+            p{
+                padding-bottom: 5px;
+            }
+        }
+    }
+    single-content{
+        margin-bottom: 45px;
+    }
+}

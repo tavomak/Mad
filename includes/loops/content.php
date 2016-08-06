@@ -10,7 +10,7 @@ If you require different templates for different post types, then simply duplica
 Alternatively, notice that index.php, category.php and single.php have a post_class() function-call that inserts different classes for different post types into the <section> tag (e.g. <section id="" class="format-aside">). Therefore you can simply use e.g. .format-aside {your styles} in css/es-mad.css style the different formats in different ways.
 */
 ?>
-   <section class="container-fluid">
+        <section class="container-fluid">
         <div class="noticias">
            <div class="row">
 
@@ -52,8 +52,7 @@ Alternatively, notice that index.php, category.php and single.php have a post_cl
 
             </div><!--ROW-->
         </div><!--Noticia-->
-    <?php tha_entry_after(); ?>
-
+    <?php tha_entry_after();?>
     </section>
 
 <?php if ( function_exists('es_mad_pagination') ) { es_mad_pagination(); } else if ( is_paged() ) { ?>
@@ -63,5 +62,4 @@ Alternatively, notice that index.php, category.php and single.php have a post_cl
   </ul>
 <?php } ?>
 <?php else: wp_redirect(get_bloginfo('siteurl').'/404', 404); exit; ?>
-	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 <?php endif; ?>

@@ -11,7 +11,7 @@ Example loop for custom post type "Resource"
 <?php if(have_posts()): while(have_posts()): the_post(); ?>
 <?php tha_entry_before(); ?>
 <article role="article" id="post_<?php the_ID()?>" <?php post_class()?>>
-<header>
+<section>
 <h2><?php the_title()?></h2>
 <h4>
 <em>
@@ -24,7 +24,7 @@ Example loop for custom post type "Resource"
 <i class="glyphicon glyphicon-comment"></i>&nbsp; <?php _e('Comments', 'es-mad'); ?>: <?php comments_popup_link(__('None', 'es-mad'), '1', '%'); ?>
 </p>
 <?php tha_entry_top(); ?>
-</header>
+</section>
 <section>
 <?php the_post_thumbnail(); ?>
 <?php the_content()?>

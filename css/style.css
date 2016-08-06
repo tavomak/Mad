@@ -505,6 +505,44 @@ a:hover {
   opacity: .6;
 }
 
+.single .single-img {
+  padding: 0;
+  max-height: 80vh;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.single .single-img .img-bg img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  margin: -20% 0 0 0;
+}
+
+.single .single-img .wrap-title {
+  margin: 0 auto;
+  max-width: 60%;
+  background: #f4ea05;
+  position: relative;
+}
+
+.single .single-img .wrap-title .img-title {
+  text-align: center;
+}
+
+.single .single-img .wrap-title hr {
+  border: 1px solid #555555;
+  margin: 0;
+}
+
+.single .single-img .wrap-title p {
+  padding-bottom: 5px;
+}
+
+.single single-content {
+  margin-bottom: 45px;
+}
+
 .contacto #modalbox {
   border-radius: 0;
   opacity: 0.96;

@@ -18,5 +18,6 @@
     
   </div><!-- /.row -->
 </div><!-- /.container -->
-
+<hr>
+<?php get_template_part('includes/subfooter'); ?>
 <?php get_template_part('includes/footer'); ?>

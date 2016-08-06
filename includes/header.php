@@ -12,7 +12,7 @@
         <?php wp_head(); ?>
     </head>
 
-    <body <?php body_class(); ?>>
+    <body<?php body_class(); ?>>
         <?php tha_body_top(); ?>
 
         <!--[if lt IE 8]>
@@ -46,7 +46,3 @@
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container -->
         </nav>
-
-        <div class="container">
-            <?php// get_template_part('includes/navbar-search'); ?>
-        </div>

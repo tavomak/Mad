@@ -1,0 +1,82 @@
+.primary-slide{
+    .carousel{
+        height: 100%;
+        .carousel-inner{
+            @include MQ(XL){
+                max-height: 87vh;
+            }
+            @include MQ(L){
+                max-height: 40vh;
+            }
+            @include MQ(M){
+                max-height: 300px;
+            }
+            @include MQ(S){
+                max-height: 170px;
+            }
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: auto;
+            }
+            .item{
+                .carousel-caption{
+                    top: 5%;
+                    text-shadow: none;
+                    a{
+                        color: $color-1;
+                        &:hover{
+                            text-decoration: none;
+                            color: black;
+                        }
+                    }
+                    p,h2{
+                        background: $color-3;
+                        margin: 0;
+                        padding: 5px;
+                    }
+                    hr{
+                        margin: 0;
+                        border: 1px solid $color-1;
+                    }
+                    h2{
+                        @include MQ(S){
+                            font-size: 24px;
+                            line-height: 110%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.toggleHeading {
+	animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+     -moz-animation-delay: 0.5s;
+       -o-animation-delay: 0.5s;
+	   -moz-transition: none !important;
+}
+
+.toggleCaption {
+	animation-delay: 1.5s;
+  -webkit-animation-delay: 1.5s;
+     -moz-animation-delay: 1.5s;
+       -o-animation-delay: 1.5s;
+	   -moz-transition: none !important;
+}
+.carousel-indicators{
+    li{
+        width: 25px;
+        height: 25px;
+        border: 2px solid $white;
+        border-radius: 50%;
+        transition: .5s ease;
+    }
+    .active{
+        width: 20px;
+        height: 20px;
+        background: $color-3;
+    }
+
+}

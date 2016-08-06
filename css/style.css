@@ -132,6 +132,105 @@ svg {
   height: 100%;
 }
 
+.primary-slide .carousel {
+  height: 100%;
+}
+
+.primary-slide .carousel .carousel-inner {
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 1281px) {
+  .primary-slide .carousel .carousel-inner {
+    max-height: 87vh;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1280px) {
+  .primary-slide .carousel .carousel-inner {
+    max-height: 40vh;
+  }
+}
+
+@media handheld, only screen and (min-width: 481px) and (max-width: 768px) {
+  .primary-slide .carousel .carousel-inner {
+    max-height: 300px;
+  }
+}
+
+@media handheld, only screen and (max-width: 480px) {
+  .primary-slide .carousel .carousel-inner {
+    max-height: 170px;
+  }
+}
+
+.primary-slide .carousel .carousel-inner img {
+  width: 100%;
+  height: auto;
+}
+
+.primary-slide .carousel .carousel-inner .item .carousel-caption {
+  top: 5%;
+  text-shadow: none;
+}
+
+.primary-slide .carousel .carousel-inner .item .carousel-caption a {
+  color: #555555;
+}
+
+.primary-slide .carousel .carousel-inner .item .carousel-caption a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.primary-slide .carousel .carousel-inner .item .carousel-caption p, .primary-slide .carousel .carousel-inner .item .carousel-caption h2 {
+  background: #f4ea05;
+  margin: 0;
+  padding: 5px;
+}
+
+.primary-slide .carousel .carousel-inner .item .carousel-caption hr {
+  margin: 0;
+  border: 1px solid #555555;
+}
+
+@media handheld, only screen and (max-width: 480px) {
+  .primary-slide .carousel .carousel-inner .item .carousel-caption h2 {
+    font-size: 24px;
+    line-height: 110%;
+  }
+}
+
+.toggleHeading {
+  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  -o-animation-delay: 0.5s;
+  -moz-transition: none !important;
+}
+
+.toggleCaption {
+  animation-delay: 1.5s;
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  -o-animation-delay: 1.5s;
+  -moz-transition: none !important;
+}
+
+.carousel-indicators li {
+  width: 25px;
+  height: 25px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: .5s ease;
+}
+
+.carousel-indicators .active {
+  width: 20px;
+  height: 20px;
+  background: #f4ea05;
+}
+
 img.alignright {
   float: right;
   margin: 1em 0 2em 2em;
@@ -171,7 +270,7 @@ nav {
 }
 
 .navbar-nav li a:hover {
-  color: #ebd000;
+  color: #f4ea05;
   text-decoration: underline;
 }
 
@@ -200,29 +299,14 @@ nav {
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
   background: white;
-  color: #ebd000;
+  color: #f4ea05;
   text-decoration: underline;
+  font-weight: 600;
 }
 
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:focus, .dropdown-menu > .active > a:hover {
-  background: #EDEDEB;
+  background: #f4f4e7;
   color: #555555;
-}
-
-.primary-slide .carousel .carousel-inner {
-  max-height: 87vh;
-  overflow: hidden;
-}
-
-.primary-slide .carousel .carousel-inner img {
-  width: 100%;
-  height: auto;
-}
-
-.primary-slide .carousel .item .caption {
-  position: absolute;
-  max-width: 50%;
-  margin-left: 20px;
 }
 
 html, body {
@@ -304,7 +388,7 @@ a:hover {
 .main-noticias,
 .main-talleres {
   width: 100%;
-  margin: 25px 0 25px 0;
+  margin: 25px 0 5px 0;
   display: table;
 }
 
@@ -315,22 +399,45 @@ a:hover {
 
 .section-title h1 {
   margin-bottom: 0;
+  background: #f4f4e7;
+  padding-left: 10px;
 }
 
 .section-title small {
-  padding-left: 5px;
+  padding: 5px 0  0 10px;
   text-decoration: underline;
 }
 
 .noticias article,
 .talleres article {
+  position: relative;
+  transition: .5s ease;
   margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1280px) {
+  .noticias article,
+  .talleres article {
+    min-height: 320px;
+  }
+}
+
+@media only screen and (min-width: 1281px) {
+  .noticias article,
+  .talleres article {
+    min-height: 300px;
+  }
 }
 
 .noticias article hr,
 .talleres article hr {
   margin: 5px 0 5px 0;
   border: 1px solid #555555;
+}
+
+.noticias article h3,
+.talleres article h3 {
+  color: #555555;
 }
 
 .noticias article .spam,
@@ -364,6 +471,13 @@ a:hover {
   cursor: pointer;
   max-height: 200px;
   padding: 0;
+  display: block;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1280px) {
+  .thu-content {
+    max-height: 160px;
+  }
 }
 
 .thu-content img {
@@ -414,7 +528,7 @@ a:hover {
 
 .contacto #social-media ul li span {
   font-size: 25px;
-  color: #ebd000;
+  color: #f4ea05;
 }
 
 .contacto #social-media ul li span:hover {
@@ -446,7 +560,7 @@ a:hover {
 }
 
 .wpcf7 input[type=submit] {
-  background: #ebd000;
+  background: #f4ea05;
 }
 
 .wpcf7 {
@@ -458,7 +572,7 @@ a:hover {
 .wpcf7 input[type=submit] {
   margin: 10px;
   width: 200px;
-  background: #ebd000;
+  background: #f4ea05;
   border: none;
   height: 60px;
 }

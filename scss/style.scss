@@ -3,9 +3,9 @@
 @import 'partials/mixins'; // centrado vertical/horizontal y fallback fuentes
 @import 'partials/variables'; // colores, tipos de letra y personalizados
 @import 'modules/loader';
+@import 'modules/slides';
 @import 'modules/image-aligin';
 @import 'layouts/nav';
-@import 'layouts/carousel';
 @import 'layouts/global';
 @import 'layouts/noticias';
 @import 'layouts/contacto';

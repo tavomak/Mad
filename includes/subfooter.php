@@ -46,7 +46,7 @@
                         <a href="https://www.facebook.com/espaciomad/?fref=ts" target="_blank">
                             <span class="icon-facebook facebook fl"></span><p>Facebook</p>
                         </a>
-                        <a href="#">
+                        <a href="https://www.instagram.com/espaciomad/">
                             <span class="icon-instagram instagram fl"></span><p>Instagram</p>
                         </a>
                         <a href="#">
@@ -71,10 +71,14 @@
                             <p class="copy">&copy; <?php echo date('Y'); ?>, Todos los derechos reservados.</p>
                         </li>
                         <li class="list-inline">
-                            <p class="est">Designed and coded by</p>
+                           <a href="http://estelaestudio.com/">
+                                <p class="est">Designed and coded by</p>
+                            </a>
                         </li>
                         <li class="list-inline">
-                            <img class="" src="<?php bloginfo('template_directory'); ?>/img/estela-logo.png" alt="Estela estudio de diseño">
+                           <a href="http://estelaestudio.com/">
+                                <img class="" src="<?php bloginfo('template_directory'); ?>/img/estela-logo.png" onmouseover="this.src='<?php bloginfo('template_directory'); ?>/img/estela-logo-hover.png'" onmouseout="this.src=' <?php bloginfo('template_directory'); ?>/img/estela-logo.png '" alt="Estela estudio de diseño">
+                           </a>
                         </li>
                     </ul>
                 </div>

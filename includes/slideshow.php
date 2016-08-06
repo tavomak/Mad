@@ -10,13 +10,14 @@
                 $do_not_duplicate = $post->ID; ?>
 
                 <div class="item">
-                    <div class="caption">
+                    <div class="carousel-caption">
                        <a href="<?php the_permalink();?>" class="button">
-                           <h2><?php echo the_title();?></h2>
-                           <p><?php echo get_the_excerpt();?></p>
+                           <h2 class="toggleHeading"><?php echo the_title();?></h2>
+                           <hr class="toggleCaption  visible-sm visible-md visible-lg">
+                           <p class="toggleCaption  visible-sm visible-md visible-lg"><?php echo get_the_excerpt();?></p>
                         </a>
                     </div>
-                    <?php if ( has_post_thumbnail() ) { the_post_thumbnail(); } ?>
+                    <?php if ( has_post_thumbnail() ) { the_post_thumbnail('large'); } ?>
                 </div>
 
                 <?php endwhile; ?>

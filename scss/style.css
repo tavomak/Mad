@@ -130,6 +130,88 @@ svg {
   width: 100%;
   height: 100%; }
 
+/* line 2, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/modules/slides.scss */
+.primary-slide .carousel {
+  height: 100%; }
+  /* line 4, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/modules/slides.scss */
+  .primary-slide .carousel .carousel-inner {
+    overflow: hidden; }
+    @media only screen and (min-width: 1281px) {
+      /* line 4, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/modules/slides.scss */
+      .primary-slide .carousel .carousel-inner {
+        max-height: 87vh; } }
+    @media only screen and (min-width: 769px) and (max-width: 1280px) {
+      /* line 4, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/modules/slides.scss */
+      .primary-slide .carousel .carousel-inner {
+        max-height: 40vh; } }
+    @media handheld, only screen and (min-width: 481px) and (max-width: 768px) {
+      /* line 4, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/modules/slides.scss */
+      .primary-slide .carousel .carousel-inner {
+        max-height: 300px; } }
+    @media handheld, only screen and (max-width: 480px) {
+      /* line 4, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/modules/slides.scss */
+      .primary-slide .carousel .carousel-inner {
+        max-height: 170px; } }
+    /* line 18, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/modules/slides.scss */
+    .primary-slide .carousel .carousel-inner img {
+      width: 100%;
+      height: auto; }
+    /* line 23, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/modules/slides.scss */
+    .primary-slide .carousel .carousel-inner .item .carousel-caption {
+      top: 5%;
+      text-shadow: none; }
+      /* line 26, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/modules/slides.scss */
+      .primary-slide .carousel .carousel-inner .item .carousel-caption a {
+        color: #555555; }
+        /* line 28, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/modules/slides.scss */
+        .primary-slide .carousel .carousel-inner .item .carousel-caption a:hover {
+          text-decoration: none;
+          color: black; }
+      /* line 33, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/modules/slides.scss */
+      .primary-slide .carousel .carousel-inner .item .carousel-caption p, .primary-slide .carousel .carousel-inner .item .carousel-caption h2 {
+        background: #f4ea05;
+        margin: 0;
+        padding: 5px; }
+      /* line 38, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/modules/slides.scss */
+      .primary-slide .carousel .carousel-inner .item .carousel-caption hr {
+        margin: 0;
+        border: 1px solid #555555; }
+      @media handheld, only screen and (max-width: 480px) {
+        /* line 42, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/modules/slides.scss */
+        .primary-slide .carousel .carousel-inner .item .carousel-caption h2 {
+          font-size: 24px;
+          line-height: 110%; } }
+
+/* line 53, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/modules/slides.scss */
+.toggleHeading {
+  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  -o-animation-delay: 0.5s;
+  -moz-transition: none !important; }
+
+/* line 61, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/modules/slides.scss */
+.toggleCaption {
+  animation-delay: 1.5s;
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  -o-animation-delay: 1.5s;
+  -moz-transition: none !important; }
+
+/* line 69, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/modules/slides.scss */
+.carousel-indicators li {
+  width: 25px;
+  height: 25px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: .5s ease; }
+
+/* line 76, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/modules/slides.scss */
+.carousel-indicators .active {
+  width: 20px;
+  height: 20px;
+  background: #f4ea05; }
+
 /* line 1, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/modules/image-aligin.scss */
 img.alignright {
   float: right;
@@ -169,7 +251,7 @@ nav {
   line-height: 50px; }
   /* line 6, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/layouts/nav.scss */
   .navbar-nav li a:hover {
-    color: #ebd000;
+    color: #f4ea05;
     text-decoration: underline; }
 
 /* line 13, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/layouts/nav.scss */
@@ -197,28 +279,14 @@ nav {
 /* line 33, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/layouts/nav.scss */
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
   background: white;
-  color: #ebd000;
-  text-decoration: underline; }
+  color: #f4ea05;
+  text-decoration: underline;
+  font-weight: 600; }
 
-/* line 38, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/layouts/nav.scss */
+/* line 39, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/layouts/nav.scss */
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:focus, .dropdown-menu > .active > a:hover {
-  background: #EDEDEB;
+  background: #f4f4e7;
   color: #555555; }
-
-/* line 3, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/layouts/carousel.scss */
-.primary-slide .carousel .carousel-inner {
-  max-height: 87vh;
-  overflow: hidden; }
-  /* line 6, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/layouts/carousel.scss */
-  .primary-slide .carousel .carousel-inner img {
-    width: 100%;
-    height: auto; }
-
-/* line 12, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/layouts/carousel.scss */
-.primary-slide .carousel .item .caption {
-  position: absolute;
-  max-width: 50%;
-  margin-left: 20px; }
 
 /* line 4, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/layouts/global.scss */
 html, body {
@@ -298,61 +366,84 @@ a:hover {
 .main-noticias,
 .main-talleres {
   width: 100%;
-  margin: 25px 0 25px 0;
+  margin: 25px 0 5px 0;
   display: table; }
 
-/* line 11, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/layouts/noticias.scss */
+/* line 10, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/layouts/noticias.scss */
 .section-title {
   margin-bottom: 25px;
   padding-bottom: 10px; }
-  /* line 14, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/layouts/noticias.scss */
+  /* line 13, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/layouts/noticias.scss */
   .section-title h1 {
-    margin-bottom: 0; }
-  /* line 17, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/layouts/noticias.scss */
+    margin-bottom: 0;
+    background: #f4f4e7;
+    padding-left: 10px; }
+  /* line 18, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/layouts/noticias.scss */
   .section-title small {
-    padding-left: 5px;
+    padding: 5px 0 0 10px;
     text-decoration: underline; }
 
-/* line 24, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/layouts/noticias.scss */
+/* line 25, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/layouts/noticias.scss */
 .noticias article,
 .talleres article {
+  position: relative;
+  transition: .5s ease;
   margin-bottom: 30px; }
-  /* line 26, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/layouts/noticias.scss */
+  @media only screen and (min-width: 769px) and (max-width: 1280px) {
+    /* line 25, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/layouts/noticias.scss */
+    .noticias article,
+    .talleres article {
+      min-height: 320px; } }
+  @media only screen and (min-width: 1281px) {
+    /* line 25, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/layouts/noticias.scss */
+    .noticias article,
+    .talleres article {
+      min-height: 300px; } }
+  /* line 34, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/layouts/noticias.scss */
   .noticias article hr,
   .talleres article hr {
     margin: 5px 0 5px 0;
     border: 1px solid #555555; }
-  /* line 30, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/layouts/noticias.scss */
+  /* line 38, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/layouts/noticias.scss */
+  .noticias article h3,
+  .talleres article h3 {
+    color: #555555; }
+  /* line 41, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/layouts/noticias.scss */
   .noticias article .spam,
   .talleres article .spam {
     background: #555555;
     width: 100%;
     padding: 5px;
     color: white; }
-  /* line 36, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/layouts/noticias.scss */
+  /* line 47, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/layouts/noticias.scss */
   .noticias article strong,
   .talleres article strong {
     font-size: 12px; }
-  /* line 39, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/layouts/noticias.scss */
+  /* line 50, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/layouts/noticias.scss */
   .noticias article ul,
   .talleres article ul {
     padding: 0;
     margin: 0; }
 
-/* line 44, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/layouts/noticias.scss */
+/* line 55, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/layouts/noticias.scss */
 .noticias p,
 .talleres p {
   margin-bottom: 10px; }
 
-/* line 49, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/layouts/noticias.scss */
+/* line 60, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/layouts/noticias.scss */
 .thu-content {
   margin: 0 auto;
   position: relative;
   overflow: hidden;
   cursor: pointer;
   max-height: 200px;
-  padding: 0; }
-  /* line 57, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/layouts/noticias.scss */
+  padding: 0;
+  display: block; }
+  @media only screen and (min-width: 769px) and (max-width: 1280px) {
+    /* line 60, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/layouts/noticias.scss */
+    .thu-content {
+      max-height: 160px; } }
+  /* line 70, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/layouts/noticias.scss */
   .thu-content img {
     max-width: 100%;
     height: auto;
@@ -360,7 +451,7 @@ a:hover {
     border: 0;
     padding: 0;
     margin: 0; }
-  /* line 65, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/layouts/noticias.scss */
+  /* line 78, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/layouts/noticias.scss */
   .thu-content .clip-mask {
     position: absolute;
     top: 0;
@@ -371,7 +462,7 @@ a:hover {
     opacity: 0;
     background: white;
     transition: all 0.2s ease-out; }
-    /* line 75, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/layouts/noticias.scss */
+    /* line 88, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/layouts/noticias.scss */
     .thu-content .clip-mask:hover {
       opacity: .6; }
 
@@ -396,7 +487,7 @@ a:hover {
     /* line 20, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/layouts/contacto.scss */
     .contacto #social-media ul li span {
       font-size: 25px;
-      color: #ebd000; }
+      color: #f4ea05; }
       /* line 23, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/layouts/contacto.scss */
       .contacto #social-media ul li span:hover {
         color: #555555; }
@@ -427,7 +518,7 @@ a:hover {
 
 /* line 54, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/layouts/contacto.scss */
 .wpcf7 input[type=submit] {
-  background: #ebd000; }
+  background: #f4ea05; }
 
 /* line 58, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/layouts/contacto.scss */
 .wpcf7 {
@@ -438,7 +529,7 @@ a:hover {
   .wpcf7 input[type=submit] {
     margin: 10px;
     width: 200px;
-    background: #ebd000;
+    background: #f4ea05;
     border: none;
     height: 60px; }
     /* line 68, D:/wamp/www/mad/wp/wp-content/themes/mad/scss/layouts/contacto.scss */

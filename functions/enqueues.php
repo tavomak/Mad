@@ -68,6 +68,14 @@ Delete (or comment-out) the next two lines of code below if you don't want the B
         //wp_enqueue_style('woomm');
     //}
 
+    if(is_front_page()){
+        wp_register_style('ani-mad-css', get_template_directory_uri() . '/css/animate.css', false, null);
+        wp_enqueue_style('ani-mad-css');
+
+        wp_register_script('anima', get_template_directory_uri() . '/js/carousel.js', false, null, false);
+        wp_enqueue_script('anima');
+    }
+
 
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {

@@ -3,6 +3,7 @@
 <div class="section-title container">
     <h1><?php echo single_cat_title(); ?></h1>
 </div>
+<p>archive</p>
 <hr>
 <div class="container">
     <div class="row">

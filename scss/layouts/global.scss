@@ -43,6 +43,7 @@ table {
 //decoracion---------------------------------------------
 a{
     text-decoration: none;
+    color: $color-4;
 }
 .dn{
     display: none;
@@ -67,3 +68,4 @@ a:hover{
 .hovernav{
     cursor: pointer;
 }
+h1,h2,h3,h4,{font-weight: $bold;}

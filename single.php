@@ -16,7 +16,7 @@
                     </div>
                </div>
                 <div class="img-bg">
-                    <?php the_post_thumbnail(); ?>
+                    <?php the_post_thumbnail('large-mad'); ?>
                 </div>
             </div>
             <?php tha_entry_top(); ?>
@@ -38,7 +38,7 @@
         <hr>
         <div class="container">
            <div class="row">
-               <div class="col-sm-9">
+               <div class="col-sm-9 comentarios">
                     <?php comments_template('/includes/loops/comments.php'); ?>
                </div>
            </div>

@@ -45,9 +45,26 @@ function remove_footer_admin ()
 }
 add_filter('admin_footer_text', 'remove_footer_admin');
 
+//contacto modal
 function add_last_nav_item($items) {
   return $items .= '<li><a type="button" data-toggle="modal" data-target="#escribenos">Contacto</a></li>';
 }
 add_filter('wp_nav_menu_items','add_last_nav_item');
+
+//Gets post cat slug and looks for single-[cat slug].php and applies it
+add_filter('single_template', 'check_for_category_single_template');
+function check_for_category_single_template( $t )
+{
+  foreach( (array) get_the_category() as $cat )
+  {
+    if ( file_exists(TEMPLATEPATH . "/single-category-{$cat->slug}.php") ) return TEMPLATEPATH . "/single-category-{$cat->slug}.php";
+    if($cat->parent)
+    {
+      $cat = get_the_category_by_ID( $cat->parent );
+      if ( file_exists(TEMPLATEPATH . "/single-category-{$cat->slug}.php") ) return TEMPLATEPATH . "/single-category-{$cat->slug}.php";
+    }
+  }
+  return $t;
+}
 
 ?>

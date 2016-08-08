@@ -40,7 +40,7 @@ if (have_comments()) : ?>
 
 <?php if (comments_open()) : ?>
 <section id="respond">
-  <h3><?php comment_form_title(__('Interactua', 'es-mad'), __('Responde a %s', 'es-mad')); ?></h3>
+  <h3><?php comment_form_title(__('Interactúa', 'es-mad'), __('Responde a %s', 'es-mad')); ?></h3>
   <p><?php cancel_comment_reply_link(); ?></p>
   <?php if (get_option('comment_registration') && !is_user_logged_in()) : ?>
   <p><?php printf(__('Debes estar<a href="%s">logeado</a> para dejar un comentario.', 'es-mad'), wp_login_url(get_permalink())); ?></p>
@@ -54,16 +54,16 @@ if (have_comments()) : ?>
     <?php else : ?>
     <div class="form-group">
       <label for="author"><?php _e('Nombre', 'es-mad'); if ($req) echo ' <span class="text-muted">' . __('(requerido)', 'bst') . '</span>'; ?></label>
-      <input type="text" class="form-control" name="author" id="author" placeholder="<?php _e('Nombre', 'es-mad'); ?>" value="<?php echo esc_attr($comment_author); ?>" <?php if ($req) echo 'aria-required="true"'; ?>>
+      <input type="text" class="form-control" name="author" id="author"  value="<?php echo esc_attr($comment_author); ?>" <?php if ($req) echo 'aria-required="true"'; ?>>
     </div>
     <div class="form-group">
       <label for="email"><?php _e('Email', 'es-mad'); if ($req) echo ' <span class="text-muted">' . _e(' (requerido, no se publica)', 'es-mad') . '</span>'; ?></label>
-      <input type="email" class="form-control" name="email" id="email" placeholder="<?php _e('email', 'es-mad'); ?>" value="<?php echo esc_attr($comment_author_email); ?>" <?php if ($req) echo 'aria-required="true"'; ?>>
+      <input type="email" class="form-control" name="email" id="email"  value="<?php echo esc_attr($comment_author_email); ?>" <?php if ($req) echo 'aria-required="true"'; ?>>
     </div>
     <?php endif; ?>
     <div class="form-group">
       <label for="comment"><?php _e('Comentario', 'es-mad'); ?></label>
-      <textarea name="comment" class="form-control" id="comment" placeholder="<?php _e('Comentario', 'es-mad'); ?>" rows="8" aria-required="true"></textarea>
+      <textarea name="comment" class="form-control" id="comment"  rows="8" aria-required="true"></textarea>
     </div>
     <p><input name="submit" class="btn btn-default" type="submit" id="submit" value="<?php _e('Enviar comentario', 'es-mad'); ?>"></p>
     <?php comment_id_fields(); ?>

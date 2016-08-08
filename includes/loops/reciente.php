@@ -5,8 +5,8 @@ The te podria interesar Loop
 */
 ?>
 <div class="container reciente">
-               <div class="row section-title">
-                    <h1 >Te podria interesar:</h1>
+               <div class="row reciente-title">
+                    <h3>Te podría interesar:</h3>
                </div>
                <div class="row">
                     <?php tha_content_before(); ?>
@@ -26,7 +26,7 @@ The te podria interesar Loop
                                     <div class="clip-mask"></div>
                                </a>
                             </li>
-                            <li>
+                            <li class="title-articulo">
                                 <a href="<?php the_permalink();?>">
                                     <h4><?php echo the_title();?></h4>
                                 </a>

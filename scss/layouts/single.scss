@@ -1,35 +1,78 @@
-.single {
-    .single-img {
-        padding: 0;
-        max-height: 80vh;
-        overflow: hidden;
-        margin-bottom: 25px;
-        .img-bg {
-            img{
-                width: 100%;
-                height: auto;
-                vertical-align: middle;
-                margin: -20% 0 0 0;
-            }
-        }
-        .wrap-title{
-            margin: 0 auto;
-            max-width: 60%;
-            background: $color-3;
-            position: relative;
-            .img-title {
-                text-align: center;
-            }
-            hr{
-                border: 1px solid $color-1;
-                margin: 0;
-            }
-            p{
-                padding-bottom: 5px;
-            }
+.single-img {
+    padding: 0;
+    max-height: 70vh;
+    overflow: hidden;
+    margin-bottom: 25px;
+    .img-bg {
+        img{
+            width: 100%;
+            height: auto;
+            vertical-align: middle;
+            margin: -20% 0 0 0;
         }
     }
+    .wrap-title{
+        margin: 0 auto;
+        max-width: 60%;
+        background: $color-3;
+        position: relative;
+        margin-top: 2%;
+        .img-title {
+            text-align: center;
+        }
+        h2, h3, h4, h5, h6{
+            margin: 15px 0 0 0;
+            padding: 5px;
+        }
+        hr{
+            border: 1px solid $color-1;
+            margin: 0;
+            padding: 0;
+        }
+        p{
+            padding:1px 15px 1px 15px;
+        }
+    }
+}
+.single {
     single-content{
         margin-bottom: 45px;
     }
+}
+.sidebar{
+    border-top: 1px solid $color-1;
+    margin-top: 25px;
+    section{
+        margin-bottom: 10px;
+        border-bottom: 1px solid $color-1;
+        padding: 5px;
+    }
+}
+.categories-2 label.screen-reader-text {
+  display: none;
+}
+.reciente{
+    .reciente-title{
+        h3{
+            background: $color-2;
+            padding: 10px;
+        }
+    }
+    article{
+        padding: 5px 5px 0 5px;
+        ul{
+            padding: 0;
+            .thu-content{
+                height: 180px;
+                overflow: hidden;
+            }
+            .title-articulo{
+                background: $color-2;
+                padding: 2px 0 2px 15px;
+            }
+        }
+    }
+}
+.comentarios{
+    padding-top: 15px;
 }

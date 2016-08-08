@@ -52,14 +52,15 @@ Alternatively, notice that index.php, category.php and single.php have a post_cl
 
             </div><!--ROW-->
         </div><!--Noticia-->
-    <?php tha_entry_after();?>
-    </section>
+                <?php tha_entry_after();?>
 
-<?php if ( function_exists('es_mad_pagination') ) { es_mad_pagination(); } else if ( is_paged() ) { ?>
-  <ul class="pagination">
-    <li class="older"><?php next_posts_link('<i class="glyphicon glyphicon-arrow-left"></i> ' . __('Previous', 'es-mad')) ?></li>
-    <li class="newer"><?php previous_posts_link(__('Next', 'es-mad') . ' <i class="glyphicon glyphicon-arrow-right"></i>') ?></li>
-  </ul>
-<?php } ?>
-<?php else: wp_redirect(get_bloginfo('siteurl').'/404', 404); exit; ?>
-<?php endif; ?>
+                <?php if ( function_exists('es_mad_pagination') ) { es_mad_pagination(); } else if ( is_paged() ) { ?>
+                  <ul class="pagination">
+                    <li class="older"><?php next_posts_link('<i class="glyphicon glyphicon-arrow-left"></i> ' . __('Previous', 'es-mad')) ?></li>
+                    <li class="newer"><?php previous_posts_link(__('Next', 'es-mad') . ' <i class="glyphicon glyphicon-arrow-right"></i>') ?></li>
+                  </ul>
+                <?php } ?>
+                <?php else: ?>
+                <h1 class="text-center">No encontramos lo que buscas...</h1>
+                <?php endif; ?>
+    </section>

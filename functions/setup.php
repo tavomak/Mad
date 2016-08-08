@@ -7,6 +7,7 @@ function es_mad_setup() {
     update_option('medium_size_w', 470);
     update_option('large_size_w', 970);
     add_image_size( 'noticia', 450 );
+    add_image_size( 'large-mad', 1200 );
 }
 add_action('init', 'es_mad_setup');
 

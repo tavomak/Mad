@@ -11,3 +11,24 @@
 @import 'layouts/single';
 @import 'layouts/contacto';
 @import 'layouts/footer';
+.mad-rep{
+    margin: 0;
+    padding: 0;
+    ul{
+        padding: 0;
+        margin: 0 0 15px 0;
+        li{
+            max-height: 250px;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: auto;
+                border: 0;
+            }
+            h3{padding: 0 0 0 25px;}
+            p{padding: 0 0 0 25px;}
+        }
+    }
+}

@@ -5,11 +5,12 @@
   <div class="row">
     <div class="">
       <div id="content" role="main">
+       <p>sjgksg</p>
         <?php tha_content_before(); ?>
         <div class="woocommerce">
             <?php woocommerce_content(); ?>
         </div>
-      </div><!-- /#content -->      
+      </div><!-- /#content -->
     </div>
 
   </div><!-- /.row -->

@@ -597,6 +597,37 @@ h1, h2, h3, h4 {
   padding-top: 15px;
 }
 
+.mad-rep {
+  margin: 0;
+  padding: 0;
+}
+
+.mad-rep ul {
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+.mad-rep ul li {
+  max-height: 250px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.mad-rep ul li img {
+  width: 100%;
+  height: auto;
+  border: 0;
+}
+
+.mad-rep ul li h3 {
+  padding: 0 0 0 25px;
+}
+
+.mad-rep ul li p {
+  padding: 0 0 0 25px;
+}
+
 .contacto #modalbox {
   border-radius: 0;
   opacity: 0.96;
@@ -801,37 +832,6 @@ footer .pago h3 {
 
 footer .pago ul {
   text-align: right;
-}
-
-.mad-rep {
-  margin: 0;
-  padding: 0;
-}
-
-.mad-rep ul {
-  padding: 0;
-  margin: 0 0 15px 0;
-}
-
-.mad-rep ul li {
-  max-height: 250px;
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-}
-
-.mad-rep ul li img {
-  width: 100%;
-  height: auto;
-  border: 0;
-}
-
-.mad-rep ul li h3 {
-  padding: 0 0 0 25px;
-}
-
-.mad-rep ul li p {
-  padding: 0 0 0 25px;
 }
 
 /*# sourceMappingURL=style.css.map */

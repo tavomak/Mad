@@ -17,17 +17,17 @@ Define image sizes
 function es_mad_woocommerce_image_dimensions() {
   $catalog = array(
 		'width' 	=> '350',	// px
-		'height'	=> '453',	// px
+		'height'	=> '350',	// px
 		'crop'		=> 1 		// true
 	);
 	$single = array(
 		'width' 	=> '570',	// px
-		'height'	=> '708',	// px
+		'height'	=> '570',	// px
 		'crop'		=> 1 		// true
 	);
 	$thumbnail = array(
-		'width' 	=> '350',	// px
-		'height'	=> '453',	// px
+		'width' 	=> '250',	// px
+		'height'	=> '250',	// px
 		'crop'		=> 0 		// false
 	);
 	// Image sizes
@@ -51,6 +51,37 @@ function reinnervate_wrapper_start() {
 function es_mad_wrapper_end() {
   echo '</main>';
 }
+/*
+Remover tablas
+*/
+add_filter( 'woocommerce_product_tabs', 'woo_remove_product_tabs', 98 );
+
+function woo_remove_product_tabs( $tabs ) {
+
+    unset( $tabs['description'] );      	// Remove the description tab
+    unset( $tabs['reviews'] ); 			// Remove the reviews tab
+    unset( $tabs['additional_information'] );  	// Remove the additional information tab
+
+    return $tabs;}
+
+//Remove Sales Flash
+add_filter('woocommerce_sale_flash', 'woo_custom_hide_sales_flash');
+function woo_custom_hide_sales_flash()
+{
+    return false;
+}
+
+remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );//remove "Sort By"
+
+/** Remove Showing results functionality site-wide */
+function woocommerce_result_count() {
+        return;
+}
+
+function cambiar_productos_por_pagina() {
+return 6;
+}
+add_filter( 'loop_shop_per_page', 'cambiar_productos_por_pagina' );
 
 /*
 Place a cart icon with number of items and total cost in the menu bar.
@@ -81,3 +112,21 @@ Place a cart icon with number of items and total cost in the menu bar.
 	return $menu . $social;
 }
 add_filter('wp_nav_menu_items','es_mad_woomenucart', 10, 2);*/
+
+/*
+Place a BSF currency.
+*/
+add_filter( 'woocommerce_currencies', 'add_my_currency' );
+
+function add_my_currency( $currencies ) {
+     $currencies['VEF'] = __( 'Bolivar', 'woocommerce' );
+     return $currencies;
+}
+add_filter('woocommerce_currency_symbol', 'add_my_currency_symbol', 10, 2);
+
+function add_my_currency_symbol( $currency_symbol, $currency ) {
+     switch( $currency ) {
+          case 'VEF': $currency_symbol = 'Bs.'; break;
+     }
+     return $currency_symbol;
+}

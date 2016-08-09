@@ -63,10 +63,10 @@ Delete (or comment-out) the next two lines of code below if you don't want the B
 	wp_enqueue_script('es-mad-js');
 
 
-    //if (is_woocommerce()) {
-        //wp_register_style('woomm', get_template_directory_uri() . '/css/woocommerce-dist.css', false, null);
-        //wp_enqueue_style('woomm');
-    //}
+    if (is_woocommerce()) {
+        wp_register_style('woomm', get_template_directory_uri() . '/css/woocommerce-dist.css', false, null);
+        wp_enqueue_style('woomm');
+    }
 
     if(is_front_page()){
         wp_register_style('ani-mad-css', get_template_directory_uri() . '/css/animate.css', false, null);

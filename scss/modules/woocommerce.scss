@@ -267,12 +267,7 @@ h1.page-title {
 }
 
 // Otra parte
-.woocommerce,
-a {
-    text-align: center;
-    color: $color-1;
-    font-family: avenir-r, sans-serif;
-}
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {text-align: center;}
 
 .related.products {
     clear: both;

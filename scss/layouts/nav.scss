@@ -1,15 +1,3 @@
-nav{position: absolute;}
-.navbar-nav {
-    li{
-        a{
-            line-height: 50px;
-            &:hover{
-                color: $color-3;
-                text-decoration: underline;
-            }
-        }
-    }
-}
 .navbar-default .navbar-form{
     padding: 15px 0 0 0;
 }
@@ -17,6 +5,54 @@ nav{position: absolute;}
     padding: 5px 0 0 0;
     background: white;
     border: none;
+    .navbar-nav {
+        @include MQ(LXL){
+            padding: 20px 0 0 0;
+        }
+            font-weight: $bold;
+        li {
+            height: 50px;
+            transition: 1s ease;
+            &:hover {
+                background: $color-3;
+                color: $color-4;
+            }
+            a {
+                transition: 1s ease;
+                height: 50px;
+                &:hover {
+                    background: $color-3;
+                    color: $color-4;
+                }
+            }
+            .dropdown-menu{
+                padding: 0;
+                li{
+                    a{
+
+                    }
+                }
+                .active{
+                    a{
+                        background: $color-2;
+                        color: $color-4;
+                        &:focus,
+                        &:hover{
+                        }
+                    }
+                }
+            }
+        }
+        .active {
+            a {
+                background: $color-2;
+                &:focus {
+                }
+                &:hover {
+                }
+            }
+        }
+    }
 }
 
 
@@ -29,14 +65,4 @@ nav{position: absolute;}
         max-height: 60px;
         width: auto;
     }
-}
-.navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
-    background: white;
-    color: $color-3;
-    text-decoration: underline;
-    font-weight: 600;
-}
-.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover{
-    background: $color-2;
-    color: $color-1;
 }

@@ -33,6 +33,7 @@ footer {
         color: grey;
     }
     h2 {
+        font-size: 20px;
         color: grey;
         margin-bottom: 20px;
     }
@@ -60,7 +61,6 @@ footer {
     }
     .social {
         display: block;
-        float: left;
         .facebook {
             margin:0 10px 0 0;
         }
@@ -85,6 +85,12 @@ footer {
         }
         ul {
             text-align: right;
+        }
+    }
+    .horario{
+        p{
+            margin: 0;
+            padding: 0;
         }
     }
 }

@@ -184,7 +184,7 @@ svg {
 }
 
 .primary-slide .carousel .carousel-inner .item .carousel-caption p, .primary-slide .carousel .carousel-inner .item .carousel-caption h2 {
-  background: #f4ea05;
+  background: #fff400;
   margin: 0;
   padding: 5px;
 }
@@ -228,7 +228,7 @@ svg {
 .carousel-indicators .active {
   width: 20px;
   height: 20px;
-  background: #f4ea05;
+  background: #fff400;
 }
 
 img.alignright {
@@ -261,19 +261,6 @@ img.aligncenter {
   margin-right: auto;
 }
 
-nav {
-  position: absolute;
-}
-
-.navbar-nav li a {
-  line-height: 50px;
-}
-
-.navbar-nav li a:hover {
-  color: #f4ea05;
-  text-decoration: underline;
-}
-
 .navbar-default .navbar-form {
   padding: 15px 0 0 0;
 }
@@ -282,6 +269,49 @@ nav {
   padding: 5px 0 0 0;
   background: white;
   border: none;
+}
+
+.navbar-default .navbar-nav {
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 769px) {
+  .navbar-default .navbar-nav {
+    padding: 20px 0 0 0;
+  }
+}
+
+.navbar-default .navbar-nav li {
+  height: 50px;
+  transition: 1s ease;
+}
+
+.navbar-default .navbar-nav li:hover {
+  background: #fff400;
+  color: #55478e;
+}
+
+.navbar-default .navbar-nav li a {
+  transition: 1s ease;
+  height: 50px;
+}
+
+.navbar-default .navbar-nav li a:hover {
+  background: #fff400;
+  color: #55478e;
+}
+
+.navbar-default .navbar-nav li .dropdown-menu {
+  padding: 0;
+}
+
+.navbar-default .navbar-nav li .dropdown-menu .active a {
+  background: #e6e6e6;
+  color: #55478e;
+}
+
+.navbar-default .navbar-nav .active a {
+  background: #e6e6e6;
 }
 
 .navbar {
@@ -295,18 +325,6 @@ nav {
 .navbar-brand img {
   max-height: 60px;
   width: auto;
-}
-
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
-  background: white;
-  color: #f4ea05;
-  text-decoration: underline;
-  font-weight: 600;
-}
-
-.dropdown-menu > .active > a, .dropdown-menu > .active > a:focus, .dropdown-menu > .active > a:hover {
-  background: #f4f4e7;
-  color: #555555;
 }
 
 html, body {
@@ -324,6 +342,10 @@ body {
   body {
     text-align: center;
   }
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
 }
 
 p, a {
@@ -386,10 +408,6 @@ a:hover {
   cursor: pointer;
 }
 
-h1, h2, h3, h4 {
-  font-weight: 700;
-}
-
 .main-noticias,
 .main-talleres {
   width: 100%;
@@ -404,7 +422,7 @@ h1, h2, h3, h4 {
 
 .section-title h1 {
   margin-bottom: 0;
-  background: #f4f4e7;
+  background: #fff400;
   padding-left: 10px;
 }
 
@@ -527,7 +545,7 @@ h1, h2, h3, h4 {
 .single-img .wrap-title {
   margin: 0 auto;
   max-width: 60%;
-  background: #f4ea05;
+  background: #fff400;
   position: relative;
   margin-top: 2%;
 }
@@ -571,7 +589,7 @@ h1, h2, h3, h4 {
 }
 
 .reciente .reciente-title h3 {
-  background: #f4f4e7;
+  background: #e6e6e6;
   padding: 10px;
 }
 
@@ -589,7 +607,7 @@ h1, h2, h3, h4 {
 }
 
 .reciente article ul .title-articulo {
-  background: #f4f4e7;
+  background: #e6e6e6;
   padding: 2px 0 2px 15px;
 }
 
@@ -651,7 +669,7 @@ h1, h2, h3, h4 {
 
 .contacto #social-media ul li span {
   font-size: 25px;
-  color: #f4ea05;
+  color: #fff400;
 }
 
 .contacto #social-media ul li span:hover {
@@ -683,7 +701,7 @@ h1, h2, h3, h4 {
 }
 
 .wpcf7 input[type=submit] {
-  background: #f4ea05;
+  background: #fff400;
 }
 
 .wpcf7 {
@@ -695,7 +713,7 @@ h1, h2, h3, h4 {
 .wpcf7 input[type=submit] {
   margin: 10px;
   width: 200px;
-  background: #f4ea05;
+  background: #fff400;
   border: none;
   height: 60px;
 }
@@ -761,6 +779,7 @@ footer h1 {
 }
 
 footer h2 {
+  font-size: 20px;
   color: grey;
   margin-bottom: 20px;
 }
@@ -797,7 +816,6 @@ footer #borderright-footer {
 
 footer .social {
   display: block;
-  float: left;
 }
 
 footer .social .facebook {

@@ -18,9 +18,14 @@
                         <a href="#">
                             <p>Mendoza Real Estates</p>
                         </a>
-                        <a href="#">
-                            <p>Fund. Activistas de la felicidad</p>
-                        </a>
+                        <div class="horario">
+                            <hr>
+                           <br>
+                            <strong><ins>Horario:</ins></strong>
+                            <p>
+                                <strong>Lunes a Viernes:</strong> 9:30am - 6:30pm <br><strong>Sábado:</strong> 2:00pm - 9:00pm
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-3">
@@ -56,7 +61,7 @@
                 </div>
                 <div class="col-sm-6 col-md-3 visible-sm visible-md visible-lg">
                     <div class="pago ">
-                        <h4 class="text-right">Aceptamos pago con:</h4>
+                        <h2 class="text-right">Aceptamos pago con:</h2>
                         <ul>
                             <li> <img src="<?php bloginfo('template_directory'); ?>/img/pagos.jpg" alt="MercadoPago"></li>
                         </ul>

@@ -14,11 +14,11 @@
             <div class=" container noticias">
                <div class="row section-title">
                     <h1 >NOTICIAS</h1>
-                    <small>Te mantenemos informado del mundo del arte We keed you inform of the art world </small>
+                    <small></small>
                </div>
                 <div class="row">
                     <?php
-                    $wp_query = new WP_Query(array('category_name'=>'mad-noticas' ,'showposts'=>3));
+                    $wp_query = new WP_Query(array('category_name'=>'mad-noticias' ,'showposts'=>3));
                     while($wp_query->have_posts()):
                     $wp_query->the_post();
                     $do_not_duplicate = $post->ID; ?>
@@ -60,7 +60,6 @@
            <div class="container talleres">
                <div class="row section-title">
                     <h1 >TALLERES</h1>
-                    <small>Te mantenemos informado del mundo del arte We keed you inform of the art world </small>
                </div>
                <div class="row">
                     <?php

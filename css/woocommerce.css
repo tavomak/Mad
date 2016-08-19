@@ -271,11 +271,8 @@ h1.page-title {
   height: 1em;
 }
 
-.woocommerce,
-a {
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
   text-align: center;
-  color: #555555;
-  font-family: avenir-r, sans-serif;
 }
 
 .related.products {
@@ -344,7 +341,7 @@ a {
 }
 
 .woocommerce ul.products li.product .button {
-  background: #f4f4e7;
+  background: #e6e6e6;
   color: #555555;
   border-radius: 0;
 }
@@ -354,7 +351,7 @@ a {
 }
 
 .btn-primary {
-  background: #f4f4e7;
+  background: #e6e6e6;
   color: #555555;
   border-radius: 0;
   border: 0px solid white;
@@ -362,7 +359,7 @@ a {
 
 .btn-primary:hover {
   background: #555555;
-  color: #f4ea05;
+  color: #fff400;
 }
 
 .woocommerce div.product p.price, .woocommerce div.product span.price {

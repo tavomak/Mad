@@ -14,6 +14,7 @@ body{
     }
 }
 h1, h2, h3, h4{
+    font-weight: $bold;
 }
 p, a{
     line-height: 120%;
@@ -68,4 +69,3 @@ a:hover{
 .hovernav{
     cursor: pointer;
 }
-h1,h2,h3,h4,{font-weight: $bold;}

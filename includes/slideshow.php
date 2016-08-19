@@ -4,7 +4,7 @@
             <div role="listbox" class="carousel-inner">
                 <?php
                 $wp_query = new WP_Query(array('post_type' => array( 'post' ),'posts_per_page'=>5));
-                query_posts($query_string .'&cat=-mad-noticias');
+                query_posts($query_string .'&cat=-7,-8');//Local 185,186
                 while($wp_query->have_posts()):
                 $wp_query->the_post();
                 $do_not_duplicate = $post->ID; ?>
